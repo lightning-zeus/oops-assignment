@@ -13,6 +13,9 @@ stack1(){
     buffer = new int[capacity];
     top = -1;
 }
+~stack1(){
+    delete []buffer;
+}
 void push(int data){
     if(top==capacity-1){
         cout<<"The stack is already full and will lead to overflow if more elements are added."<<endl;
